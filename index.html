@@ -1,11 +1,279 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-10" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hockeys A3</title>
+    <!-- tailwind and daisy Ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- manrope font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/5daa8eb347.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "para-color": "#13131863",
+              "border-public": "#13131833",
+              "btn-primary": "#FF4240",
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-manrope">
+    <header class="container mx-auto mt-12">
+      <!-- nav -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-10 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a
+              class="btn btn-ghost text-2xl lg:text-4xl font-extrabold text-[#131318]"
+              >Hockey<span class="text-btn-primary">’</span>s</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul
+              class="menu menu-horizontal px-1 font-normal gap-11 text-[#424247]"
+            >
+              <li class="text-btn-primary font-bold"><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-6">
+            <div class="hidden lg:flex items-center w-6 h-6">
+              <i
+                class="fa-solid fa-magnifying-glass text-[#424247] cursor-pointer"
+              ></i>
+            </div>
+            <a
+              class="bg-btn-primary rounded-lg cursor-pointer px-3 lg:px-6 py-2 lg:py-4 text-white text-lg lg:text-xl font-bold"
+              >Get Ticket</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- banner -->
+      <div class="lg:relative">
+        <div class="carousel w-full mt-12">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="/Images/1.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="/Images/1.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-[#131318] text-white lg:w-[502px] rounded-xl p-5 mt-4 lg:p-8 lg:absolute bottom-8 right-8"
+        >
+          <h3 class="text-lg lg:text-2xl font-extrabold text-white">
+            Meet all the heroes from the field
+          </h3>
+          <p class="font-medium text-[#fff9] mt-4">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit proin.
+          </p>
+        </div>
+      </div>
+    </header>
+    <main class="container mx-auto">
+      <!-- professional hockeys club -->
+      <section
+        class="text-center mt-24 border-t-2 border-public py-8 border-dashed border-b-2 border-public"
+      >
+        <h2 class="text-2xl lg:text-4xl font-extrabold">Professional Hockeys Club</h2>
+        <p class="text-para-color font-medium mt-6 w-96 lg:w-[607px] mx-auto">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat dolor. Purus urna in sit nullam proin.
+        </p>
+      </section>
+      <!-- progress section -->
+      <div>
+      <section class="mt-12 flex flex-col lg:flex-row lg:justify-between">
+        <!-- card 1-->
+        <div class="card  ">
+         <div class="flex justify-center">
+          <div class="radial-progress text-[#FF4240]" style="--value:87; --size:7rem; --thickness: 0.8rem;" role="progressbar">
+            <span class="text-3xl font-extrabold">87%</span>
+          </div>
+         </div>
+          <div class="card-body">
+            <h2 class="text-center text-xl font-semibold">Prayer Facility</h2>
+            <p class="text-center text-para-color ">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+
+          </div>
+        </div>
+        <!-- card 2-->
+        <div class="card  ">
+         <div class="flex justify-center">
+          <div class="radial-progress text-[#49D293]" style="--value:95; --size:7rem; --thickness: 0.8rem;" role="progressbar">
+            <span class="text-3xl font-extrabold">95%</span>
+          </div>
+         </div>
+          <div class="card-body">
+            <h2 class="text-center text-xl font-semibold">Experienced Coach</h2>
+            <p class="text-center text-para-color ">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+
+          </div>
+        </div>
+        <!-- card 3-->
+        <div class="card  ">
+         <div class="flex justify-center">
+          <div class="radial-progress text-[#FFB546]" style="--value:90; --size:7rem; --thickness: 0.8rem;" role="progressbar">
+            <span class="text-3xl font-extrabold">90%</span>
+          </div>
+         </div>
+          <div class="card-body">
+            <h2 class="text-center text-xl font-semibold">Senior Player</h2>
+            <p class="text-center text-para-color ">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+
+          </div>
+        </div>
+        <!-- card 1-->
+        <div class="card  ">
+         <div class="flex justify-center">
+          <div class="radial-progress text-[#4C8DF1]" style="--value:80; --size:7rem; --thickness: 0.8rem;" role="progressbar">
+            <span class="text-3xl font-extrabold">80%</span>
+          </div>
+         </div>
+          <div class="card-body">
+            <h2 class="text-center text-xl font-semibold">Training Ground</h2>
+            <p class="text-center text-para-color ">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+
+          </div>
+        </div>
+      </section>
+      <!-- program section` -->
+      <section class="mt-24 border-dashed border-t-2 border-public pt-8">
+        <h2 class="text-center text-4xl font-extrabold">Program Sections</h2>
+        <p class="font-medium text-center mt-6 lg:w-[607px] mx-auto text-para-color">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        <!-- program image -->
+        <div class="mt-8 border-dashed border-t-2 border-public">
+         <div class=" mt-12 flex flex-col lg:flex-row lg:justify-between gap-5">
+          <img class="w-auto lg:w-1/2" src="./Images/2.png" alt="">
+          <img class="w-auto lg:w-1/2" src="./Images/3.png" alt="">
+         </div>
+         <div class="mt-5">
+          <img class="w-auto lg:w-full" src="./Images/4.png" alt="">
+         </div>
+        </div>
+      </section>
+    </main>
+    <!-- <footer class="mt-24 bg-[#131318]">
+      <div
+        class="container mx-auto grid grid-cols-1 lg:flex lg:justify-between py-24"
+      >
+        <div class="">
+          <h3 class="text-3xl font-extrabold text-[#fff]">Get In Touch</h3>
+          <p class="w-80 font-medium mt-4 mb-6 text-[#fff9]">
+            Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat
+            dolor. Purus urna in sit nullam proin.
+          </p>
+          <div class="flex items-center gap-4 mb-4 text-[#fff9]">
+            <i class="fa-solid fa-envelope text-btn-primary"></i>
+            <p>hockeys@support.com</p>
+          </div>
+          <div class="flex items-center gap-4 text-[#fff9]">
+            <i class="fa-solid fa-phone text-btn-primary"></i>
+            <p>(+62) 123-321-543</p>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-7 text-white">Company</h3>
+          <ul class="leading-10 text-[#fff9]">
+            <li>About us</li>
+            <li>Leadership</li>
+            <li>Careers</li>
+            <li>News & Article</li>
+            <li>Legal Notice</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-7 text-white">Support</h3>
+          <ul class="leading-10 text-[#fff9]">
+            <li>Help Center</li>
+            <li>FAQ</li>
+            <li>Ticket Support</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-7 text-white">Services</h3>
+          <ul class="leading-10 text-[#fff9]">
+            <li>Academy</li>
+            <li>Group Lesson</li>
+            <li>Privet Lesson</li>
+            <li>Hockeys for kids</li>
+            <li>Hockeys for adult</li>
+          </ul>
+        </div>
+      </div>
+    </footer> -->
+  </body>
 </html>
